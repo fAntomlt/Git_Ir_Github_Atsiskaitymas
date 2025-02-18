@@ -173,9 +173,10 @@ main *{
             width: 100%;
             height: 300px;
         }
-        >iframe{
+        >video{
             width: 100%;
             height: 300px;
+            object-fit: cover;
         }
     }
 }
