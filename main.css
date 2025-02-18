@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Varela+Round&display=swap');
 
+/* MAIN STYLES */
 body {
     margin: 0;
     padding: 0;
@@ -22,6 +23,17 @@ body::after {
     background-size: cover;
     z-index: 2;
 }
+main{
+    padding: 150px 90px;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main *{
+    z-index: 3;
+}
+
+/* SCROLLBAR */
 html{
     scrollbar-width: thin;
     scrollbar-color: gray transparent;
@@ -38,16 +50,8 @@ html{
     background-color: gray;
     border-radius: 4px;
 }
-main{
-    padding: 150px 90px;
-    font-family: "Varela Round", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-main *{
-    z-index: 3;
-}
 
+/* LOGO AND LINE STYLES */
 .container {
     display: flex;
     justify-content: center;
@@ -75,7 +79,6 @@ main *{
     height: 50px;
     background-color: white;
 }
-
 .horizontal-line {
     position: absolute;
     top: calc(100% + 50px);
@@ -85,6 +88,7 @@ main *{
     background-color: white;
 }
 
+/* HERO AND HEADING STYLES */
 .headings{
     display: flex;
     flex-direction: column;
@@ -109,6 +113,8 @@ main *{
         }
     }
 }
+
+/* HERO LINE STYLES */
 .container2{
     display: flex;
     justify-content: center;
@@ -132,6 +138,7 @@ main *{
     background-color: white;
 }
 
+/* TAB CONTAINER STYLES */
 .tabContainer{
     margin-top: 50px;
     display: flex;
@@ -153,6 +160,8 @@ main *{
     background-color: rgba(255, 255, 255, 0.267);
     cursor: pointer;
 }
+
+/* OPENED TAB STYLES */
 .generalTab{
     background-color: rgba(4, 4, 8, 0.664);
     box-sizing: border-box;
@@ -203,6 +212,8 @@ main *{
         }
     }
 }
+
+/* JAVASCRIPT-RELATED AND OTHER OPENED TAB STYLES */
 .tabs{
     display: none;
 }
@@ -228,11 +239,15 @@ main *{
     z-index: 10;
 }
 
+/* MOBILE DESIGN */
 @media (max-width: 600px){
+    /* MAIN STYLES */
     main{
         padding: 115px 20px;
         padding-bottom: 0;
     }
+
+    /* HEADING STYLES */
     .headings{
         margin-bottom: 10px;
         >p{
@@ -240,12 +255,16 @@ main *{
             font-size: 16px;
         }
     }
+
+    /* TABS AND JS-RELATED STYLES */
     .tabContainer{
         flex-direction: column;
     }
     .tab{
         width: 95%;
     }
+    
+    /* OPENED TAB STYLES */
     .generalTab{
         width: 95%;
         height: 90%;
