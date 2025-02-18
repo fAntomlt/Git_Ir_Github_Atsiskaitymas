@@ -224,4 +224,16 @@ main *{
     .tab{
         width: 95%;
     }
+    .generalTab{
+        width: 95%;
+        height: 90%;
+        >div{
+            >p{
+                font-size: 0.79em;
+            }
+        }
+        >div:nth-child(1){
+            gap: 0;
+        }
+    }
 }
