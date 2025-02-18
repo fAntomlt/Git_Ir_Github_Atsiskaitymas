@@ -156,7 +156,7 @@ main *{
 .generalTab{
     background-color: rgba(4, 4, 8, 0.664);
     box-sizing: border-box;
-    width: 95%;
+    width: 85%;
     height: 90%;
     padding: 50px;
     display: flex;
