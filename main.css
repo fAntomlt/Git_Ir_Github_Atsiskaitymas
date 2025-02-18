@@ -158,6 +158,7 @@ main *{
             >h1{
                 border-bottom: 1px solid white;
                 padding-bottom: 10px;
+                letter-spacing: 7px;
             }
         }
         >div:nth-child(2){
