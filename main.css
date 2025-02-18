@@ -111,3 +111,21 @@ main *{
     height: 1px;
     background-color: white;
 }
+
+.tabContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    border: 1px solid white;
+    >p{
+        color: white;
+    }
+}
