@@ -175,24 +175,24 @@ main *{
 .tabs{
     display: none;
 }
-.close{
+.close {
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
-
+.close:hover {
+    transform: rotate(90deg);
+}
 .hidden {
     display: none !important;
-  }
-  
-  .visible {
+}
+.visible {
     display: block;
-  }
-  
-  /* Class for active tab content – centers it on the screen */
-  .active-tab {
+}
+.active-tab {
     display: flex !important;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-  }
+}
