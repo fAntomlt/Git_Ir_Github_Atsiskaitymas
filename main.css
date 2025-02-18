@@ -97,6 +97,7 @@ main *{
         font-size: 60px;
     }
     >p{
+        line-height: 35px;
         font-size: 19px;
         >span{
             border-bottom: 1px dotted white;
