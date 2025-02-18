@@ -23,7 +23,7 @@ body::after {
     z-index: 2;
 }
 main{
-    padding: 90px;
+    padding: 150px 90px;
     font-family: "Varela Round", serif;
     font-weight: 400;
     font-style: normal;
