@@ -28,4 +28,29 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedContent.classList.add('active-tab');
       });
     });
+    
+    const closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            const currentTab = closeBtn.closest('.generalTab');
+            if(currentTab){
+              currentTab.classList.add('hidden');
+              currentTab.classList.remove('active-tab');
+            }
+
+            const tabsContainer = document.querySelector('.tabs');
+            tabsContainer.classList.add('hidden');
+            tabsContainer.classList.remove('visible');
+
+            document.querySelector('header').classList.remove('hidden');
+            document.querySelector('footer').classList.remove('hidden');
+        
+            const mainContent = document.querySelector('.main-content');
+            Array.from(mainContent.children).forEach(child => {
+                if(!child.classList.contains('tabs')){
+                    child.classList.remove('hidden');
+                }
+            });
+        });
+    });
 });
