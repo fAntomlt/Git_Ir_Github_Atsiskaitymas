@@ -205,3 +205,9 @@ main *{
     transform: translate(-50%, -50%);
     z-index: 10;
 }
+
+@media (max-width: 600px){
+    main{
+        padding: 150px 20px;
+    }
+}
